@@ -1,5 +1,5 @@
 [<% @parking_spots[0...-1].each do |parking_spot| %>
 {"mID"="<%= parking_spot.id %>","mLat"="<%= parking_spot.mLat %>","mLong"="<%= parking_spot.mLong %>","mCompanyName"="<%= parking_spot.mCompanyName %>","mLocalID"="<%= parking_spot.mLocalID %>","mPrice"="<%= parking_spot.mPrice %>","mPhoneNumber"="<%= parking_spot.mPhoneNumber %>","mDesc"="<%= parking_spot.mDesc %>","mFree"="<%= parking_spot.mFree %>"},
 <% end %><% @parking_spots[-1..-1].each do |parking_spot| %>
-{"mID"="<%= parking_spot.id %>,"mLat"="<%= parking_spot.mLat %>","mLong"="<%= parking_spot.mLong %>","mCompanyName"="<%= parking_spot.mCompanyName %>","mLocalID"="<%= parking_spot.mLocalID %>","mPrice"="<%= parking_spot.mPrice %>","mPhoneNumber"="<%= parking_spot.mPhoneNumber %>","mDesc"="<%= parking_spot.mDesc %>","mFree"="<%= parking_spot.mFree %>"}
+{"mID"="<%= parking_spot.id %>","mLat"="<%= parking_spot.mLat %>","mLong"="<%= parking_spot.mLong %>","mCompanyName"="<%= parking_spot.mCompanyName %>","mLocalID"="<%= parking_spot.mLocalID %>","mPrice"="<%= parking_spot.mPrice %>","mPhoneNumber"="<%= parking_spot.mPhoneNumber %>","mDesc"="<%= parking_spot.mDesc %>","mFree"="<%= parking_spot.mFree %>"}
 <% end %>]
