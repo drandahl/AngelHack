@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  mLat: 1.5
+  mLong: 1.5
+  mCompanyName: MyString
+  mLocalID: 1
+  mPrice: 1.5
+  mPhoneNumber: MyString
+  mDesc: MyString
+  mFree: false
+
+two:
+  mLat: 1.5
+  mLong: 1.5
+  mCompanyName: MyString
+  mLocalID: 1
+  mPrice: 1.5
+  mPhoneNumber: MyString
+  mDesc: MyString
+  mFree: false

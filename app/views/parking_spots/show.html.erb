@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Mlat:</b>
+  <%= @parking_spot.mLat %>
+</p>
+
+<p>
+  <b>Mlong:</b>
+  <%= @parking_spot.mLong %>
+</p>
+
+<p>
+  <b>Mcompanyname:</b>
+  <%= @parking_spot.mCompanyName %>
+</p>
+
+<p>
+  <b>Mlocalid:</b>
+  <%= @parking_spot.mLocalID %>
+</p>
+
+<p>
+  <b>Mprice:</b>
+  <%= @parking_spot.mPrice %>
+</p>
+
+<p>
+  <b>Mphonenumber:</b>
+  <%= @parking_spot.mPhoneNumber %>
+</p>
+
+<p>
+  <b>Mdesc:</b>
+  <%= @parking_spot.mDesc %>
+</p>
+
+<p>
+  <b>Mfree:</b>
+  <%= @parking_spot.mFree %>
+</p>
+
+
+<%= link_to 'Edit', edit_parking_spot_path(@parking_spot) %> |
+<%= link_to 'Back', parking_spots_path %>
