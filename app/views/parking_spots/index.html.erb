@@ -1,37 +1,5 @@
-<h1>Listing parking_spots</h1>
-
-<table>
-  <tr>
-    <th>Mlat</th>
-    <th>Mlong</th>
-    <th>Mcompanyname</th>
-    <th>Mlocalid</th>
-    <th>Mprice</th>
-    <th>Mphonenumber</th>
-    <th>Mdesc</th>
-    <th>Mfree</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @parking_spots.each do |parking_spot| %>
-  <tr>
-    <td><%= parking_spot.mLat %></td>
-    <td><%= parking_spot.mLong %></td>
-    <td><%= parking_spot.mCompanyName %></td>
-    <td><%= parking_spot.mLocalID %></td>
-    <td><%= parking_spot.mPrice %></td>
-    <td><%= parking_spot.mPhoneNumber %></td>
-    <td><%= parking_spot.mDesc %></td>
-    <td><%= parking_spot.mFree %></td>
-    <td><%= link_to 'Show', parking_spot %></td>
-    <td><%= link_to 'Edit', edit_parking_spot_path(parking_spot) %></td>
-    <td><%= link_to 'Destroy', parking_spot, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New Parking spot', new_parking_spot_path %>
+[<% @parking_spots[0...-1].each do |parking_spot| %>
+{"mID"=<%= parking_spot.id %>,"mLat"=<%= parking_spot.mLat %>,"mLong"=<%= parking_spot.mLong %>,"mCompanyName"=<%= parking_spot.mCompanyName %>,"mLocalID="<%= parking_spot.mLocalID %>,"mPrice"=<%= parking_spot.mPrice %>,"mPhoneNumber"=<%= parking_spot.mPhoneNumber %>,"mDesc"=<%= parking_spot.mDesc %>,"mFree"=<%= parking_spot.mFree %>},
+<% end %><% @parking_spots[-1..-1].each do |parking_spot| %>
+{"mID"=<%= parking_spot.id %>,"mLat"=<%= parking_spot.mLat %>,"mLong"=<%= parking_spot.mLong %>,"mCompanyName"=<%= parking_spot.mCompanyName %>,"mLocalID="<%= parking_spot.mLocalID %>,"mPrice"=<%= parking_spot.mPrice %>,"mPhoneNumber"=<%= parking_spot.mPhoneNumber %>,"mDesc"=<%= parking_spot.mDesc %>,"mFree"=<%= parking_spot.mFree %>}
+<% end %>]
